@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+    <script>
+    // This function checks the user's answer and redirects to the next page or shows an error message
+    function checkAnswer() {
+      // Get the user's input from the text box
+      var input = document.getElementById("input").value;
+      // If the input is "ROSE", go to the next page
+      if (input == "ROSE") {
+        window.location.href = "next_page.html";
+      }
+      // Otherwise, show an error message
+      else {
+        alert("Try again!");
+      }
+    }
+    </script>
+    
+</head>
+<body>
+  <h1>Enter the word</h1> 
+  <div id="center"></div>
+  
+  <input type="text" id="input" placeholder="Let the mystery unveil!!.. ">
+</br>
+</br>
+<div id="button"><button onclick="checkAnswer()">  Submit   </button></div>
+</div>
+  </body>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-image: url("./bg door.jpg");
+    }
+    h1{
+      color: white;
+      text-align: center;
+      font-family: "Rubik_Glitch variant0", sans-serif;
+    }
+    button{
+      color:white;
+      background-color: rgba(65, 9, 9, 0.801);
+      border-radius: 20px;
+      width: 150px;
+      height: 40px;
+      font-size: 20px;
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+      }
+    
+    
+    input[type="text"] {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+  </style>
+</html>
+
+
+
